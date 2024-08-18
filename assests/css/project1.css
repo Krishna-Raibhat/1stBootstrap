@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+
+.nav-items ul{
+    list-style: none; /* list ko pont ma aaudina*/
+
+}
+.nav-items ul li{
+    display: inline-block;
+}
+
+.nav-items ul .item{
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    font-style: italic;
+    font-size: large;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.nav-logo .item {
+    display: flex;
+    align-items: center;
+}
+.nav-logo .company-name {
+    margin-left: 10px; /* Adjust the spacing between the logo and the text */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #000;
+    font-weight: bold; /* Change color as needed */
+}
+
+.nav-items ul .item:hover{
+    background-color: azure;
+}
+
+.button {
+    font-size: 10px; /* Make the button text larger */
+    background-color: black; /* Change background color to black */
+    color: white; /* Change text color to white */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; border-radius: 20px;/* Change cursor to pointer on hover */
+}
+
+.button:hover {
+    background-color: #333; /* Change background color on hover if needed */
+}
+#hi{
+    background-color: yellow;
+    color: black;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.first{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.img1 {
+    flex: 1;
+}
+
+.img1 img {
+    width: 90%;
+    height: 50vh;
+    display: block;
+}
+
+.heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.img2 {
+    float: left;
+    width: 50%; /* Adjust width as needed */
+}
+
+.img2 img {
+    width: 90%;
+    height: 50vh;
+    display: block;
+}
+
+.second {
+    float: right;
+    width: 50%; /* Adjust width as needed */
+    box-sizing: border-box;
+    padding-left: 20px; /* Adjust padding as needed */
+}
+
+.second h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.second p {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.second ul li{
+    font-weight: bold;
+    padding: 0;
+    list-style: none;
+    line-height: 0.1;
+}
+
+.second li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.second span {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 0.9;
+}

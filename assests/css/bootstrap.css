@@ -1,0 +1,8 @@
+.carousel-item img{
+    height: calc(100vh - 40px);
+    object-fit: cover;
+    object-position: top;
+}
+main{
+    margin-bottom: 5%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests\css\newform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <fieldset>
+        <h1>Register</h1>
+        <form action="" name="myForm" onsubmit="return formValidation()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" ><br><br>
+            <p id="nmessage"></p>
+
+
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+            <p id="emessage"></p>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone"> <br><br>
+            <p id="pmessage"></p>
+        
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+           
+            <i class="fa-sharp fa-regular fa-eye" id="show" onclick="seePassword"></i>
+            <p id="ppmessage"></p>
+
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        
+            <input type="submit" value="Register">
+        </form>
+        </fieldset><br><br>
+
+        
+        <script>
+
+            function seePassword(){
+                var z = document.getElementById("password");
+                if(z.type == "password"){
+                    z.type = "text";
+                }else{
+                    z.type = "password";
+                }
+            }
+            function formValidation(){
+                if(document.myForm.name.value==""){
+                    document.getElementById("nmessage").innerHTML ="Name is required";
+                    return false;
+                }
+
+                if(document.myForm.phone.value==""){
+                    document.getElementById("pmessage").innerHTML ="Phone Number  is required";
+                    return false;
+                }
+                if(isNaN(document.myForm.phone.value)){
+                    document.getElementById("pmessage").innerHTML ="Phone Number  must be numeric";
+                    return false;
+                }
+            }
+        </script>
+
+</body>
+</html>

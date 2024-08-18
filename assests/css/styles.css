@@ -1,0 +1,25 @@
+
+
+.grad{
+    height: 60vh;
+    
+}
+
+/*.linear{
+    background-image: linear-gradient( to right,red, green, blue)
+    
+}*/
+
+.radial{
+    background-image: radial-gradient(circle ,red, green, blue);
+
+}
+
+.conic{
+    background-image: repeating-conic-gradient(  red 10%,purple 10% , black 20%);
+}
+
+.radial{
+    background-image: radial-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6) ), url('../image/download.jpg') ;
+}
+

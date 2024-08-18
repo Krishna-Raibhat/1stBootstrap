@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p class="new">Hello</p>
+    <p class="new">ram</p>
+    <h1 class="new">I am ironman</h1>
+    <p id="new"></p>
+    <h1></h1>
+    <script src="/assests/js/app.js"></script>
+
+    <div class="box">
+        <video src="" id="video" autoplay></video>
+        <button onclick="opencamera()">Open camera</button>
+        <button onclick="closecamera()">Close camera</button>
+      </div>
+  
+      <script>
+        let stream;
+  
+        async function opencamera() {
+          stream = await navigator.mediaDevices.getUserMedia({ video: true });
+          document.getElementById("video").srcObject = stream;
+        }
+  
+        function closecamera() {
+          if (stream) {
+            const tracks = stream.getTracks();
+            tracks.forEach((track) => track.stop());
+            document.getElementById("video").srcObject = null;
+          }
+        }
+      </script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+

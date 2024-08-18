@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    background-color: black;
+    display: flex; /* sadhaii main mai diney flex chaii*/
+    flex-wrap: wrap; /* chhappinna*/
+    gap: 1rem; /*flex use garesii space aaune*/
+    /*height: 100vh;
+    justify-content: center;
+    align-items: center; /* justify conent le chai horizontally bich ma leune,align items le chai vertically*/ */
+    align-content: space-evenly;
+
+}
+
+.sec{
+    height: 100px;
+    width: 200px;
+    flex-grow: 1; /*gap auuna didaina*/
+    flex-shrink: 1;
+    flex-basis: 300px; /*minimum width kon kam grxa*/
+    /*yo tintai ko shortcut flex: 1 1 300px ; */
+
+}
+
+.sec:nth-child(odd){
+    background-color: yellow;
+    
+}
+
+.sec:nth-child(even){
+    background-color: green;
+}
